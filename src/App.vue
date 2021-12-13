@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss">
 
-@import url('./assets/style/vars.scss');
-@import url('./assets/style/generals.scss');
+@import './assets/style/vars.scss';
+@import './assets/style/generals.scss';
 
 </style>

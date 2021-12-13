@@ -34,8 +34,8 @@ export default {
 
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
-//@import url('./assets/style/vars.scss');
-@import url('../assets/style/generals.scss');
+@import '../assets/style/vars.scss';
+@import '../assets/style/generals.scss';
 
 header{
   width: 100vw;
@@ -67,11 +67,11 @@ header{
           line-height: 100px;
           text-transform: uppercase;
           font-size: 12px;
-          color: #5b2ca2;
+          color: $violet-color;
         }
 
         .active{
-          border-bottom: 2px solid #5b2ca2;
+          border-bottom: 2px solid $violet-color;
         }
 
       } 

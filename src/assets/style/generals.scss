@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-  width: 1000px;
+  width: 1700px;
   margin: 0 auto;
 }
 
@@ -21,4 +21,14 @@ img{
 
 a{
   color: black;
+}
+
+.btn{
+  width: 200px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 14px;
+  color: $violet-color;
+  background-color: white;
+  border-radius: 5px;
 }
