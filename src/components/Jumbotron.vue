@@ -6,11 +6,11 @@
   <div class="container">
     <div class="jumbo-inner">
       <div class="jumbo-text">
-        <h5>FRESH & TASTY BAKERY EVERY DAY</h5>
-        <h1>The Perfect Fresh Bread</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, obcaecati necessitatibus. Quam aliquid corrupti sed rem. Ratione eius quam temporibus.</p>
+        <h5 class="title-section">FRESH & TASTY BAKERY EVERY DAY</h5>
+        <h1 class="title-1">The Perfect Fresh Bread</h1>
+        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, obcaecati necessitatibus. Quam aliquid corrupti sed rem. Ratione eius quam temporibus.</p>
         
-        <div class="btn">
+        <div class="btn btn-white">
           <span>Explore our product</span>
         </div>
       </div>
@@ -43,6 +43,7 @@ export default {
   background-image: url('~@/assets/img/hero-header-bakery.jpg');
   background-size: cover;
   background-position: center;
+  margin-bottom: 150px;
 
   .jumbo-inner{
     height: calc(100vh - 100px);
@@ -51,24 +52,6 @@ export default {
 
     .jumbo-text{
       width: 30%;
-
-      h5{
-        color: darken($grey-color, 20%);
-        margin-bottom: 20px;
-      }
-
-      h1{
-        color: $violet-color;
-        font-size: 50px;
-        margin-bottom: 20px;
-      }
-
-      p{
-        color: darken($grey-color, 20%);
-        font-size: 18px;
-        line-height: 30px;
-        margin-bottom: 50px;
-      }
     }
 
   }

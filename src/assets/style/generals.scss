@@ -17,10 +17,44 @@ body{
 
 img{
   width: 100%;
+  max-width: 100%;
 }
 
 a{
   color: black;
+}
+
+// PAGE STYLE //
+
+.title-section{
+  color: darken($grey-color, 20%);
+  margin-bottom: 20px;
+}
+
+.title-1{
+  color: $violet-color;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.title-2{
+  color: $violet-color;
+  font-size: 33px;
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+
+.title-3{
+  color: $violet-color;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.subtitle{
+  color: darken($grey-color, 20%);
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 50px;
 }
 
 .btn{
@@ -28,7 +62,15 @@ a{
   padding: 10px 15px;
   text-align: center;
   font-size: 14px;
+  border-radius: 5px;
+}
+
+.btn-white{
   color: $violet-color;
   background-color: white;
-  border-radius: 5px;
+}
+
+.btn-violet{
+  color: white;
+  background-color: $violet-color;
 }
