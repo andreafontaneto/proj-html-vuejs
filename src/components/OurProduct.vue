@@ -54,10 +54,10 @@ export default {
     .product-text{
       width: 100%;
 
-      .btn{
-        width: 170px;
-        padding: 15px 0;
-      }
+      // .btn{
+      //   width: 170px;
+      //   padding: 15px 0;
+      // }
     }
   }
 

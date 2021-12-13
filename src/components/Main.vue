@@ -4,6 +4,7 @@
 
     <OurProduct />
     <CorporateWeddings />
+    <Carousel />
 
   </main>
   
@@ -13,12 +14,14 @@
 
 import OurProduct from './OurProduct.vue';
 import CorporateWeddings from './CorporateWeddings.vue';
+import Carousel from './Carousel.vue';
 
 export default {
   name: 'Main',
   components: {
     OurProduct,
-    CorporateWeddings
+    CorporateWeddings,
+    Carousel
   }
 }
 </script>

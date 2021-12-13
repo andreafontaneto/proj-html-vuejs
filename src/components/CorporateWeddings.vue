@@ -24,7 +24,7 @@ export default {
 @import '../assets/style/generals.scss';
 
 .corporate-weddings{
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 
   .title-section, .title-2{
     text-align: center;
