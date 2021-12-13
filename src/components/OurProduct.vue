@@ -46,6 +46,7 @@ export default {
   height: 700px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 150px;
 
   .product-inner{
     width: 30%;

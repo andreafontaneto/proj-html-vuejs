@@ -3,6 +3,7 @@
   <main class="container">
 
     <OurProduct />
+    <CorporateWeddings />
 
   </main>
   
@@ -10,12 +11,14 @@
 
 <script>
 
-import OurProduct from './OurProduct.vue'
+import OurProduct from './OurProduct.vue';
+import CorporateWeddings from './CorporateWeddings.vue';
 
 export default {
   name: 'Main',
   components: {
-    OurProduct
+    OurProduct,
+    CorporateWeddings
   }
 }
 </script>
