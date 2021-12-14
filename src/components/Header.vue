@@ -6,14 +6,17 @@
 
     <div class="menu-box">
       <ul>
-        <li><a class="active" href="#">Home</a></li>
+        <li v-for="(link, index) in menuLinks" :key="index">
+          <a :class="{active : link.current === true}" :href="link.url">{{ link.text }}</a>
+        </li>
+        <!-- <li><a class="active" href="#">Home</a></li>
         <li><a href="#">Shop</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Location</a></li>
         <li><a href="#">Journal</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">My Account</a></li>
+        <li><a href="#">My Account</a></li> -->
         <li>
           <a href="#">
             <i class="fas fa-shopping-cart"></i>
@@ -26,7 +29,55 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data(){
+    return{
+      menuLinks: [
+
+        {
+          url: '/home',
+          text: 'Home',
+          current: false
+        },
+        {
+          url: '/shop',
+          text: 'Shop',
+          current: true
+        },
+        {
+          url: '/about',
+          text: 'About',
+          current: false
+        },
+        {
+          url: '/gallery',
+          text: 'Gallery',
+          current: false
+        },
+        {
+          url: '/location',
+          text: 'Location',
+          current: false
+        },
+        {
+          url: '/journal',
+          text: 'Journal',
+          current: false
+        },
+        {
+          url: '/contact',
+          text: 'Contact',
+          current: false
+        },
+        {
+          url: '/my-account',
+          text: 'My Account',
+          current: false
+        }
+
+      ]
+    }
+  }
 }
 </script>
 
