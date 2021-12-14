@@ -3,6 +3,7 @@
 
     <Jumbotron />
     <Main />
+    <Footer />
 
   </div>
 </template>
@@ -11,12 +12,14 @@
 
 import Jumbotron from './components/Jumbotron.vue';
 import Main from './components/Main.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     Jumbotron,
-    Main
+    Main,
+    Footer
   }
 }
 </script>

@@ -13,27 +13,22 @@
       </div>
     </div>
 
-
-    <div class="product-image-box">
-      <div class="l-product-image">
-        <img src="../assets/img/choco-chip-cookies.jpg" alt="">
-      </div>
-
-      <div class="r-product-image">
-        <img src="../assets/img/strawberry-jam-cookies.jpg" alt="">
-      </div>
-
-      <div class="l-arrow"><i class="fas fa-chevron-left"></i></div>
-      <div class="r-arrow"><i class="fas fa-chevron-right"></i></div>
-    </div>
+    <Slider2Items />
 
   </section>
   
 </template>
 
 <script>
+
+import Slider2Items from './Slider2Items.vue';
+
 export default {
-  name: 'OurProduct'
+  name: 'OurProduct',
+  components: {
+    Slider2Items
+  }
+
 }
 </script>
 
@@ -53,49 +48,6 @@ export default {
 
     .product-text{
       width: 100%;
-
-      // .btn{
-      //   width: 170px;
-      //   padding: 15px 0;
-      // }
-    }
-  }
-
-  .product-image-box{
-    width: 65%;
-    height: 100%;
-    display: flex;
-    position: relative;
-
-    .l-product-image, .r-product-image{
-      width: 50%;
-      padding: 10px;
-
-      img{
-        width: 600px;
-      }
-    }
-
-    .l-arrow, .r-arrow{
-      width: 50px;
-      height: 80px;
-      background-color: rgba($violet-color, 0.4);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      transform: translateY(-50%);
-    }
-
-    .l-arrow{
-      top: 50%;
-      left: 10px;
-    }
-
-    .r-arrow{
-      top: 50%;
-      right: 10px;
     }
   }
 

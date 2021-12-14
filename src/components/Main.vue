@@ -13,8 +13,6 @@
 
     <CallToAction />
 
-    <Footer />
-
   </div>
   
 </template>
@@ -28,7 +26,7 @@ import BakeryProcess from './BakeryProcess.vue';
 import Locations from './Locations.vue';
 import Social from './Social.vue';
 import CallToAction from './CallToAction.vue';
-import Footer from './Footer.vue';
+
 
 export default {
   name: 'Main',
@@ -40,7 +38,6 @@ export default {
     Locations,
     Social,
     CallToAction,
-    Footer
   }
 }
 </script>
