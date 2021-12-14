@@ -7,6 +7,7 @@
     <Carousel />
     <BakeryProcess />
     <Locations />
+    <Social />
 
   </main>
   
@@ -19,6 +20,7 @@ import CorporateWeddings from './CorporateWeddings.vue';
 import Carousel from './Carousel.vue';
 import BakeryProcess from './BakeryProcess.vue';
 import Locations from './Locations.vue';
+import Social from './Social.vue';
 
 export default {
   name: 'Main',
@@ -27,7 +29,8 @@ export default {
     CorporateWeddings,
     Carousel,
     BakeryProcess,
-    Locations
+    Locations,
+    Social
   }
 }
 </script>
