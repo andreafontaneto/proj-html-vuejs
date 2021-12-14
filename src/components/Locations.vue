@@ -43,7 +43,9 @@
             <p class="title-section">9.00 AM - 6.00 PM</p>
           </div>
           <div class="store-button">
-            <div class="btn btn-white">View Map</div>
+            <div class="btn btn-white">
+              <span>View Map</span>
+            </div>
           </div>
         </div>
       </div>

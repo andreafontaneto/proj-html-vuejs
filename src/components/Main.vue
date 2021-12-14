@@ -1,15 +1,19 @@
 <template>
 
-  <main class="container">
+  <div>
+    
+    <main class="container">
+      <OurProduct />
+      <CorporateWeddings />
+      <Carousel />
+      <BakeryProcess />
+      <Locations />
+      <Social />
+    </main>
 
-    <OurProduct />
-    <CorporateWeddings />
-    <Carousel />
-    <BakeryProcess />
-    <Locations />
-    <Social />
+    <CallToAction />
 
-  </main>
+  </div>
   
 </template>
 
@@ -21,6 +25,7 @@ import Carousel from './Carousel.vue';
 import BakeryProcess from './BakeryProcess.vue';
 import Locations from './Locations.vue';
 import Social from './Social.vue';
+import CallToAction from './CallToAction.vue';
 
 export default {
   name: 'Main',
@@ -30,7 +35,8 @@ export default {
     Carousel,
     BakeryProcess,
     Locations,
-    Social
+    Social,
+    CallToAction
   }
 }
 </script>
