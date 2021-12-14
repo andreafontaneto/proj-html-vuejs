@@ -1,7 +1,7 @@
 <template>
   <header>
-    <div class="logo-box">
-      <img src="../assets/img/avada-bakery-logo-retina.png" alt="">
+    <div :class="logoImage.class">
+      <img :src="logoImage.path" :alt="logoImage.name">
     </div>
 
     <div class="menu-box">
@@ -32,6 +32,13 @@ export default {
   name: 'Header',
   data(){
     return{
+
+      logoImage: {
+        name: 'logo',
+        class: 'logo-box',
+        path: require('../assets/img/avada-bakery-logo-retina.png')
+      },
+
       menuLinks: [
 
         {
