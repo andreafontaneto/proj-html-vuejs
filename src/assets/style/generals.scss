@@ -64,14 +64,25 @@ a{
   text-align: center;
   font-size: 14px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn-white{
   color: $violet-color;
   background-color: white;
+
+  &:hover{
+    color: white;
+    background-color: $violet-color;
+  }
 }
 
 .btn-violet{
   color: white;
   background-color: $violet-color;
+
+  &:hover{
+    color: $violet-color;
+    background-color: lighten($light-violet-color, 10%);
+  }
 }

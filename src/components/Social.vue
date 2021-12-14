@@ -60,6 +60,10 @@ export default {
     .title-2{
       margin-bottom: 40px;
     }
+
+    .fa-instagram{
+      margin-right: 10px;
+    }
   }
 }
 

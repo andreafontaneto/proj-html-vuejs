@@ -36,10 +36,10 @@
         <div class="btn btn-violet">Subscribe</div>
       </div>
       <div class="social-icons">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-pinterest-p"></i>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-pinterest-p"></i></a>
       </div>
     </div>
 
@@ -142,7 +142,7 @@ footer{
       }
     }
 
-    .social-icons i{
+    .social-icons a{
       color: $violet-color;
       font-size: 18px;
       margin: 0 20px;
