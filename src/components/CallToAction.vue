@@ -27,7 +27,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 100px 100px 350px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 
   .title-section{
     color: $grey-color;

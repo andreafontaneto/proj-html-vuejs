@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    
+
     <main class="container">
       <OurProduct />
       <CorporateWeddings />
@@ -12,6 +12,8 @@
     </main>
 
     <CallToAction />
+
+    <Footer />
 
   </div>
   
@@ -26,6 +28,7 @@ import BakeryProcess from './BakeryProcess.vue';
 import Locations from './Locations.vue';
 import Social from './Social.vue';
 import CallToAction from './CallToAction.vue';
+import Footer from './Footer.vue';
 
 export default {
   name: 'Main',
@@ -36,7 +39,8 @@ export default {
     BakeryProcess,
     Locations,
     Social,
-    CallToAction
+    CallToAction,
+    Footer
   }
 }
 </script>
