@@ -57,7 +57,7 @@ export default {
       logoImage: {
         name: 'logo',
         class: 'logo-box',
-        path: require('../assets/img/avada-bakery-logo-retina.png')
+        path: require('../assets/img/avada-bakery-logo.png')
       },
 
       menuLinks: [
