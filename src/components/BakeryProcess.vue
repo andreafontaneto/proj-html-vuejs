@@ -23,7 +23,7 @@
       <div class="bp-image-02">
         <div class="title-box">
           <h1 class="title-1">We Start Baking</h1> 
-          <span class="number">01</span>
+          <span class="number">02</span>
         </div>
         <div class="bp-description">
           <h5 class="title-section">SWEET & DELICIOUS</h5>

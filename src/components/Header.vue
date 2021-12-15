@@ -125,6 +125,7 @@ header{
           line-height: 100px;
           text-transform: uppercase;
           font-size: 12px;
+          font-weight: 600;
           color: $violet-color;
         }
 

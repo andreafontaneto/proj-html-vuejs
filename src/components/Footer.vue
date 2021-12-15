@@ -124,7 +124,6 @@ footer{
     }
 
     .menu-box{
-      margin-right: 20px;
       margin-bottom: 100px;
 
       ul{
@@ -134,7 +133,7 @@ footer{
 
         li{
           margin: 0 5px;
-          padding: 0px 17px;
+          padding: 0px 15px;
 
           a{
             padding: 5px;
