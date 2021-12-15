@@ -2,19 +2,20 @@
   <footer class="container">
 
     <div class="footer-left">
-      <div class="logo-box">
-        <img src="../assets/img/avada-bakery-logo-retina.png" alt="">
+      <div :class="logoImage.class">
+        <img :src="logoImage.path" :alt="logoImage.name">
       </div>
 
       <div class="menu-box">
         <ul>
-          <li><a href="#">Shop</a></li>
+          <li v-for="(link, index) in menuLinks" :key="index"><a :href="menuLinks.url">{{ link.text }}</a></li>
+          <!-- <li><a href="#">Shop</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Gallery</a></li>
           <li><a href="#">Location</a></li>
           <li><a href="#">Journal</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Orders</a></li>
+          <li><a href="#">Orders</a></li> -->
           <li class="cart">
             <a href="#">
               <i class="fas fa-shopping-cart"></i>
@@ -26,7 +27,7 @@
         </ul>
       </div>
 
-      <p class="subtitle">&copy; Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by Wordpress</p>
+      <p class="subtitle">&copy; {{ credits.copyright }} | {{ credits.theme }} | {{ credits.rights }} | {{ credits.powered }}</p>
     </div>
 
     <div class="footer-right">
@@ -48,7 +49,61 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+
+  data(){
+    return{
+
+      logoImage: {
+        name: 'logo',
+        class: 'logo-box',
+        path: require('../assets/img/avada-bakery-logo-retina.png')
+      },
+
+      menuLinks: [
+
+        {
+          url: '/shop',
+          text: 'Shop'
+        },
+        {
+          url: '/about',
+          text: 'About'
+        },
+        {
+          url: '/gallery',
+          text: 'Gallery'
+        },
+        {
+          url: '/location',
+          text: 'Location'
+        },
+        {
+          url: '/journal',
+          text: 'Journal'
+        },
+        {
+          url: '/contact',
+          text: 'Contact'
+        },
+        {
+          url: '/orders',
+          text: 'Orders'
+        }
+      ],
+
+      credits: {
+
+        copyright: 'Copyright 2012 - 2020',
+        theme: 'Avada Theme by ThemeFusion',
+        rights: 'All Rights Reserved',
+        powered: 'Powered by Wordpress'
+
+      }
+
+    }
+  }
+
 }
 </script>
 

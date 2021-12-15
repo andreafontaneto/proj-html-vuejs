@@ -5,8 +5,14 @@
     <h2 class="title-2">Baking Special Moments</h2>
 
     <div class="cw-image-box">
-      <img class="cw-image" src="../assets/img/corporate-bg.jpg" alt="">
-      <img class="cw-image" src="../assets/img/wedding-bg.jpg" alt="">
+      <div class="cw-image-left">
+        <img class="cw-image" src="../assets/img/corporate-bg.jpg" alt="">
+        <img class="cw-image-hover" src="../assets/img/corporate-hover-bg.jpg" alt="">
+      </div>
+      <div class="cw-image-right">
+        <img class="cw-image" src="../assets/img/wedding-bg.jpg" alt="">
+        <img class="cw-image-hover" src="../assets/img/wedding-hover-bg.jpg" alt="">
+      </div>
     </div>
   </section>
   
@@ -34,8 +40,40 @@ export default {
     display: flex;
     justify-content: space-between;
 
-    .cw-image{
-      width: 800px;
+    .cw-image-left, .cw-image-right{
+      position: relative;
+
+      .cw-image, .cw-image-hover{
+        width: 800px;
+      }
+
+      // .cw-image-hover{
+      //   opacity: 0;
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      // }
+
+      // .cw-image:hover .cw-image-hover{
+      //   opacity: 1;
+      // }
+
+      .cw-image{
+        cursor: pointer;
+        display: block;
+      }
+
+      .cw-image-hover{
+        display: none;
+      }
+
+      .cw-image:hover{
+        display: none;
+      }
+
+      .cw-image:hover .cw-image-hover{
+        display: block;
+      }
     }
   }
 }
