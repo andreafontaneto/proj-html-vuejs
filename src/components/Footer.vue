@@ -3,7 +3,7 @@
 
     <div class="footer-left">
       <div :class="logoImage.class">
-        <img :src="logoImage.path" :alt="logoImage.name">
+        <a href=""><img :src="logoImage.path" :alt="logoImage.name"></a>
       </div>
 
       <div class="menu-box">

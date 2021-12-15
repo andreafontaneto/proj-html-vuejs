@@ -94,11 +94,11 @@ export default {
     }
 
     .new-york{
-      background-color: lighten(skyblue, 20%);
+      background-color: lighten($blue-color, 73%);
     }
 
     .london{
-      background-color: wheat;
+      background-color: lighten($beige-color, 18%);
     }
 
   }

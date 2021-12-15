@@ -30,7 +30,7 @@ export default {
   margin-bottom: 50px;
 
   .title-section{
-    color: $grey-color;
+    color: lighten($grey-color, 30%);
   }
 
   .title-1{

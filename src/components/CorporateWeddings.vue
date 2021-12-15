@@ -5,6 +5,7 @@
     <h2 class="title-2">Baking Special Moments</h2>
 
     <div class="cw-image-box">
+
       <div class="cw-image-left">
         <img class="cw-image" src="../assets/img/corporate-bg.jpg" alt="">
         <img class="cw-image-hover" src="../assets/img/corporate-hover-bg.jpg" alt="">
@@ -13,6 +14,7 @@
         <img class="cw-image" src="../assets/img/wedding-bg.jpg" alt="">
         <img class="cw-image-hover" src="../assets/img/wedding-hover-bg.jpg" alt="">
       </div>
+
     </div>
   </section>
   
@@ -41,25 +43,17 @@ export default {
     justify-content: space-between;
 
     .cw-image-left, .cw-image-right{
+      width: 50%;
+      height: 850px;
       position: relative;
 
       .cw-image, .cw-image-hover{
-        width: 800px;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
 
-      // .cw-image-hover{
-      //   opacity: 0;
-      //   position: absolute;
-      //   top: 0;
-      //   left: 0;
-      // }
-
-      // .cw-image:hover .cw-image-hover{
-      //   opacity: 1;
-      // }
-
       .cw-image{
-        cursor: pointer;
         display: block;
       }
 
@@ -74,7 +68,17 @@ export default {
       .cw-image:hover .cw-image-hover{
         display: block;
       }
+
     }
+
+    .cw-image-left{
+      margin-right: 40px;
+    }
+
+    .cw-image-right{
+      margin-left: 40px;
+    }
+    
   }
 }
 

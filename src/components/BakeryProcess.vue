@@ -21,14 +21,18 @@
     <div class="bp-center">
 
       <div class="bp-image-02">
-        <div class="title-box">
-          <h1 class="title-1">We Start Baking</h1> 
-          <span class="number">02</span>
+
+        <div class="bp-inner-center">
+          <div class="title-box">
+            <h1 class="title-1">We Start Baking</h1> 
+            <span class="number">02</span>
+          </div>
+          <div class="bp-description">
+            <h5 class="title-section">SWEET & DELICIOUS</h5>
+            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a incidunt quod. Molestiae vitae consequuntur ratione ea porro aut doloremque voluptatem, fugit saepe soluta accusantium ut, sint tempore eum perspiciatis.</p>
+          </div>
         </div>
-        <div class="bp-description">
-          <h5 class="title-section">SWEET & DELICIOUS</h5>
-          <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a incidunt quod. Molestiae vitae consequuntur ratione ea porro aut doloremque voluptatem, fugit saepe soluta accusantium ut, sint tempore eum perspiciatis.</p>
-        </div>
+
       </div>
 
       <div class="bp-text">
@@ -137,20 +141,31 @@ export default {
       background-image: url('~@/assets/img/bakery-process-2.jpg');
       background-position: center;
       background-size: cover;
-      padding: 70px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
-      .title-box{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+      .bp-inner-center{
+        width: 100%;
+        height: 100%;
+        padding: 70px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+
+        .title-box{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+
+        .bp-description{
+          width: 50%;
+
+          .title-section{
+            color: lighten($grey-color, 30%);
+          }
+        }
       }
 
-      .bp-description{
-        width: 50%;
-      }
     }
   
     .bp-text{

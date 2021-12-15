@@ -34,7 +34,7 @@ a{
 .title-section{
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  color: darken($grey-color, 20%);
+  color: darken($grey-color, 50%);
   margin-bottom: 20px;
 }
 
@@ -80,6 +80,8 @@ a{
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
+
+  transition: background-color 0.5s;
 }
 
 .btn-white{

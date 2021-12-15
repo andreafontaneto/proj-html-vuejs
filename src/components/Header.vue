@@ -1,7 +1,7 @@
 <template>
   <header>
     <div :class="logoImage.class">
-      <img :src="logoImage.path" :alt="logoImage.name">
+      <a href=""><img :src="logoImage.path" :alt="logoImage.name"></a>
     </div>
 
     <div class="menu-box">
@@ -98,6 +98,7 @@ export default {
 header{
   width: 100vw;
   margin: 0 20px;
+  padding-top: 15px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -117,7 +118,7 @@ header{
 
       li{
         margin: 0 5px;
-        padding: 0px 17px;
+        padding: 0px 15px;
 
         a{
           padding: 5px;
