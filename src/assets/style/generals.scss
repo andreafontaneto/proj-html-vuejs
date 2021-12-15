@@ -41,23 +41,21 @@ a{
 .title-1, .title-2, .title-3{
   font-family: 'Source Serif Pro', serif;
   font-weight: 800;
+  color: $violet-color;
 }
 
 .title-1{
-  color: $violet-color;
   font-size: 50px;
   margin-bottom: 20px;
 }
 
 .title-2{
-  color: $violet-color;
   font-size: 33px;
   line-height: 40px;
   margin-bottom: 60px;
 }
 
 .title-3{
-  color: $violet-color;
   font-size: 20px;
   margin-bottom: 20px;
 }

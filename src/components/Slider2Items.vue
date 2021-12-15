@@ -6,6 +6,7 @@
       <img :src="images[counter]" alt="">
     </div>
     <div class="item">
+      <!-- DA FIXARE (counter +1 è per caricare l'immagine successiva) -->
       <img :src="images[counter + 1]" alt="">
     </div>
 
@@ -89,15 +90,6 @@ export default {
       width: 600px;
     }
   }
-
-  // .l-product-image, .r-product-image{
-  //   width: 50%;
-  //   padding: 10px;
-
-  //   img{
-  //     width: 600px;
-  //   }
-  // }
 
   .l-arrow, .r-arrow{
     width: 50px;

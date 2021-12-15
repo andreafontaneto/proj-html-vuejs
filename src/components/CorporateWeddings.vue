@@ -53,6 +53,7 @@ export default {
         left: 0;
       }
 
+      // EFFETTO HOVER DA FIXARE!
       .cw-image{
         display: block;
       }
@@ -68,6 +69,7 @@ export default {
       .cw-image:hover .cw-image-hover{
         display: block;
       }
+      // fine EFFETTO HOVER DA FIXARE!
 
     }
 
